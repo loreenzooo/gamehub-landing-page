@@ -1,21 +1,22 @@
+*{
+    font-family: Roboto;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-main {
-}
+
 
 header {
     display: flex;
     align-items: center;
     color: #c2c2c2;
+    justify-content:space-between;
     background-color: #1f2937;
-}
-
-header .nav-bar {
-    display: flex;
-    justify-content: space-around;
+    padding-right:250px;
+    padding-left:250px;
 }
 
 header ul {
@@ -24,41 +25,69 @@ header ul {
     gap: 12px;
 }
 
-header a {
-    text-decoration: none;
+header li{
+    transition:transform 0.3s ease;
 }
 
-header .nav-bar {
-    display: flex;
-    justify-content: flex-end;
+header a {
+    text-decoration: none;
+    color:#F2F2F2;
+}
+li:hover{
+    transform:translateY(-3px);
 }
 
 .logo {
     color: #f9faf8;
     font-size: 24px;
 }
-.hero {
+.explore-btn:hover{
+    transform: translateY(-3px);
+}
+.hero{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1f2937;
+    height:450px;
+    padding-right:250px;
+    padding-left:250px;
+}
+.subtitle{
+    color:#F2F2F2;
+}
+.leftside-panel{
+    width: 600px;
+}
+
+.rightside-panel img{
+    width:500px;
 }
 .games-section {
     display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
-    gap: 8px;
 }
 .games-container img {
     width: 200px;
     height:200px;
+    border-radius: 12px;
 }
 .games-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:32px;
+    flex:1;
+}
+.game-caption{
+    display:flex;
+    justify-content: center;
+    margin-top:8px;
+    font-weight: 600;
 }
 .game-container {
-    background-color: pink;
     height: 300px;
 }
 .main-heading {
@@ -77,7 +106,7 @@ header .nav-bar {
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 350px;
     background-color: #e5e7eb;
     font-size: 36px;
     color: #1f2937;
@@ -100,7 +129,13 @@ header .nav-bar {
     color: #e5e7eb;
 }
 .explore-btn {
+    border-radius: 12px;
+    border-style: none;
+    padding:12px;
+    color: #f9faf8;
+    font-weight:bold;
     background-color: #3882f6;
+    transition: transform 0.3s ease;
 }
 .call-to-action-container {
     padding: 32px;
@@ -113,9 +148,10 @@ header .nav-bar {
     flex: 1;
     align-items: center;
 }
-.footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:32px;
     background-color: #1f2937;
 }
