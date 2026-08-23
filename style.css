@@ -68,6 +68,7 @@ li:hover{
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    height:500px;
 }
 .games-container img {
     width: 200px;
@@ -106,7 +107,7 @@ li:hover{
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 450px;
     background-color: #e5e7eb;
     font-size: 36px;
     color: #1f2937;
@@ -138,20 +139,52 @@ li:hover{
     transition: transform 0.3s ease;
 }
 .call-to-action-container {
-    padding: 32px;
-    background-color: #3882f6;
-}
-.content {
-    display: flex;
+    display:flex;
     justify-content: center;
-    flex-direction: column;
-    flex: 1;
+    height:150px;
+    padding: 32px;
+}
+.get-started-btn:hover{
+    transform:translateY(-3px);
+}
+.cta-content-container{
+    display:flex;
+    justify-content: space-between;
     align-items: center;
+    background-color: #3882f6;
+    padding:32px;
+    border-radius:8px;
+    gap:24px;
+}
+.get-started-btn{
+    background-color: transparent;
+    padding:8px;
+    border-radius: 12px;
+    border:2px solid #F2F2F2;
+    color:#F2F2F2;
+    font-weight: bold;
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.heading {
+    color: #f9faf8;
+    font-weight: bold;
+}
+.content-description {
+    color:#F2F2F2;
+}
+.cta-btn-panel{
+    display:flex;
+    justify-content: center;
+    width:200px;
+    
 }
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding:32px;
+    color:#F2F2F2;
     background-color: #1f2937;
 }
